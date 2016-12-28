@@ -11,8 +11,8 @@ import { Container, Header, Content, Text, Button, Icon } from 'native-base';
 import { Grid, Col, Row } from 'react-native-easy-grid';
 import HeaderContent from './../headerContent/';
 
-import theme from '../../themes/base-theme';
 import styles from './styles';
+import theme from '../../themes/base-theme';
 var primary = require('../../themes/variable').brandPrimary;
 
 const {

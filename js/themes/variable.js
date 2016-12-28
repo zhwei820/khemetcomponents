@@ -2,9 +2,9 @@
 const color = require('color');
 
 // theme background
-const primary = color('#01cca1');
+const primary = color('#9F81F7');
 // header
-const secondary = color('#00c497');
+const secondary = color('#5858FA');
 const info = color('#5bc0de');
 const success = color('#5cb85c');
 const danger = color('#d9534f');

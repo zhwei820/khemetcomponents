@@ -1,4 +1,6 @@
 <resources>
-    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">jsjsjs</string>
+    <string moduleConfig="true" name="debugreactNativeCodePush_androidDeploymentKey">93x9mKf0z9GUSMv36yf-4QmcykA5VJQ0NanNz</string>
+    <string name="reactNativeCodePush_androidDeploymentKey">uFYeunDJ8SInDHN3xqZdlBKHsnlJVJQ0NanNz</string>
+
     <string name="app_name">FlatApp</string>
 </resources>

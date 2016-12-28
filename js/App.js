@@ -50,6 +50,17 @@ class App extends Component {
   }
 
   componentDidMount() {
+    // this.setState({ showDownloadingModal: true });
+    // var s = 0
+
+    // setInterval(function(){
+    //     s += 3
+    //     if(s <= 100){
+    //         this.setState({ downloadProgress: (s) });
+    //     }
+    //     console.log(s)
+    // }.bind(this), 100)
+
     CodePush.sync({ updateDialog: true, installMode: CodePush.InstallMode.IMMEDIATE },
             (status) => {
               switch (status) {
@@ -65,6 +76,8 @@ class App extends Component {
                   this.setState({ showDownloadingModal: false });
                   break;
                 default:
+                  this._modal.open();
+      
                   break;
               }
             },
@@ -78,6 +91,7 @@ class App extends Component {
     if (this.state.showDownloadingModal) {
       return (
         <Container theme={theme} style={{ backgroundColor: theme.brandSecondary }}>
+
           <Image source={glow2} style={styles.container} >
             <Modal
               style={[styles.modal, styles.modal1]}
